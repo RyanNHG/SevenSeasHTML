@@ -1,0 +1,67 @@
+/*
+	COLORS
+	Sea Blue - #2244aa
+	Light Blue - #2222ff
+*/
+
+body {
+	background-color: #000000;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+.row {
+	height: 8vh;
+	background-color: #2244aa;
+}
+
+.tile {
+	width: 8vh;
+	background-color: none;
+	border: none;
+	/* Image settings */
+	background-size: 8vh;
+	background-repeat: none;
+	background-position: center;
+	padding: 0px;
+}
+
+.tile.hover.empty {
+	background-color: #2244ff;
+}
+
+.tile.hover.player, .tile.hover.whirlpool,
+.tile.hover.pirate, .tile.hover.island {
+	opacity: .5;
+}
+
+.tile > img {
+	width: inherit;
+	height: inherit;
+}
+
+.tile.empty {
+	background-image: none;
+}
+
+.tile.island {
+	background-image: url('../img/island.png');
+}
+
+.tile.whirlpool {
+	background-image: url('../img/whirlpool.png');
+}
+
+.tile.pirate {
+	background-image: url('../img/pirate.png');
+}
+
+.tile.player {
+	background-image: url('../img/player.png');
+}
+
+/*
+	transform: rotate(45deg);
+*/
